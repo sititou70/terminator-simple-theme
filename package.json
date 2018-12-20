@@ -1,0 +1,16 @@
+{
+  "name": "terminator-simple-theme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass src/gtk.scss -o dist",
+    "deploy": "npm run build && cp -r ./dist/gtk.css ~/.config/gtk-3.0/gtk.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
